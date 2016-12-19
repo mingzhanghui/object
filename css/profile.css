@@ -1,0 +1,115 @@
+#user-profile-form > .form-group > label {
+    width: 140px;  height: 30px;
+    text-align: right;
+    padding-top: 7px;
+    padding-right: 20px;
+    color: #616161;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+#user-profile-form div.form-group {
+    width: 695px;
+    min-height: 50px;
+    height: auto;
+    margin-left: 16px;
+    vertical-align: middle;
+}
+input:focus {
+    outline-color: #0099ff;
+}
+
+#user-profile-form .form-group input.common-text {
+    width: 200px; height: 30px;
+    border-radius: 4px;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+    line-height: 1.4;
+    text-rendering: auto;
+    -webkit-appearance: none;
+    -webkit-user-select: text;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+#user-profile-form > .form-group > input[type="radio"]:nth-child(3) {
+    margin-left: 20px;
+}
+
+#user-profile-form > .form-group > textarea {
+    width: 500px; height: 100px;
+    overflow-y: auto;
+    padding: 4px;
+}
+
+#user-profile-form > div.row > button#profile-save-btn {
+    color: #fff; background-color: #0f78ce;
+    padding: 4px 10px;
+    margin-left: 154px;
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+.panel-body > #user-profile-form {
+    width: 80%;  height: auto;
+    float: left;
+    margin-top: -20px;
+    /*background-color: #5bb75b;*/
+}
+
+.help-block {
+    color: red;
+    display: inline;
+    margin-top: 5px;
+}
+
+#settings-avatar-form .form-group {
+    display: inline-block;
+    float: left;
+    margin-left: 16px;
+    position: relative;
+}
+#settings-avatar-form .form-group h3 {
+    margin-bottom: 8px;
+    color: #778e78
+}
+
+#settings-avatar-form .form-group-side {
+    display: inline-block;
+    /*background-color: #5bb75b;*/
+    margin-left: 180px;
+    margin-top: 25px;
+}
+#settings-avatar-form .form-group-side input[type="file"] {
+    margin-top: 20px;
+    cursor: pointer;
+    /*opacity: 0;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: baseline;
+    text-align: start;
+}
+
+#settings-avatar-form > img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.require-red {
+    color: #f60;
+    font-family: serif;
+    margin-right: 3px;
+}
+
+div.panel-body form input[type="submit"]{
+    padding: 2px 8px;
+    background-color: #188eee;
+    color: white;
+}
+#settings-avatar-form input[type="submit"] {
+    margin-top: 10px;
+}
+#user-profile-form input[type="submit"] {
+}

@@ -1,0 +1,443 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    word-wrap: break-word;
+    text-rendering: optimizelegibility;
+    font-family: "Helvetica Neue", "sans-serif", "Arial", "微软雅黑";
+    -webkit-font-smoothing: antialiased;
+    background: #f5f8fa none repeat scroll 0 0;
+    overflow-wrap: break-word;
+    font-size: 14px;
+    line-height: 20px;
+}
+.es-wrap {
+    position: absolute;
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+.es-header {
+    background-color: #fcfcfc;
+    height: 70px;
+}
+#content-container {
+    margin: 30px auto;
+    min-height: 500px;
+    height: auto;
+    width: 100%;
+}
+#content-container > .row {
+    width: 1200px;
+    margin-left: 5%;
+    min-height: 480px;
+    height: auto;
+}
+
+.col-md-3 {
+    width: 290px; height: 318px;
+}
+.col-md-9 {
+    width: 870px; min-height: 400px;
+}
+.col-md-8 {
+    width: 760px; min-height: 400px;
+}
+.col-md-3,.col-md-9,.col-md-5 {
+    height: auto;
+    border: 1px solid #cccccc;
+    float: left;
+}
+.row > .col-md-9 {
+    margin-left: 24px;
+}
+#content-container .sidenav {
+    padding: 20px 0 10px 0;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    float: left;
+}
+.list-group {
+    /*background-color: #faa732;*/
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+}
+
+.index-header {
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: #cccccc;*/
+}
+
+.navbar-header {
+    height: 50px;
+    width: 120px;
+    margin-left: 12px;
+    padding: 10px 10px 10px;
+    /*background-color: #a2a2a2;*/
+    float: left;
+}
+form {
+    display: block;
+}
+.navbar-form {
+    margin-left: 290px;
+    height: 70px;
+    width: 32%;
+    float: left;
+}
+.form-group {
+    position: relative;
+    height: 40px;
+    width: 200px;
+    margin-top: 12px;
+    padding-right: -4px;
+    vertical-align: middle;
+}
+.navbar-form > .form-group {
+    width: 306px;
+}
+.form-control {
+    /*display: block;*/
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    transition: border-color ease-in-out 0.15s, boxshadow ease-in-out 0.15s;
+}
+textarea {
+    resize: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: auto;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    flex-direction: column;
+    cursor: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.form-group input.form-control {
+    width: 267px;
+    height: 38px;
+    padding: 0 0 0 4px;
+    line-height: 28px;
+    border-radius: 2px;
+    border: medium none;
+    border-color: #ccc;
+    position: relative;
+}
+
+button.es-icon {
+    border: transparent;
+    overflow: hidden;
+}
+/* 主页顶部搜索按钮 */
+button.es-icon-search {
+    background-color: #fff;
+    cursor: pointer;
+    display: inline;
+    height: 36px;
+    margin: -4px -2px -2px -6px;
+    outline: 0 none;
+    vertical-align: middle;
+    width: 36px;
+}
+.es-icon-search  img {
+    width: 80%; height: 80%;
+    margin: 0px;
+    position: relative;
+    background-color: #fff;
+}
+
+.navbar-user {
+    font-size: 16px;
+    float: right;
+}
+ul {list-style: none;}
+.navbar-user > ul {
+    margin-top: 15px;
+}
+.navbar-user ul li {
+    float: left;
+    padding: 10px;
+}
+.navbar-user a {
+    font-size: 14px;
+    font-family: "Microsoft YaHei", 微软雅黑;
+    color: #363636;
+    vertical-align: middle;
+}
+.loading {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    /* 加载进度条超出部分不显示 */
+    overflow: hidden;
+}
+.loading-length {
+    height: 2px;
+    background-color: #0044cc;
+}
+.index-nav {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+}
+.navbar-collapse {
+    width: 90%;
+    height: 100%;
+    /*background-color: #62c462;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar-nav {   /* ul */
+    position: relative;
+    list-style: none;
+}
+/*.dropdown-toggle {*/
+.navbar-nav > li {
+    width: 126px;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    color: #777;
+    position: relative;
+    min-width: 80px;
+    cursor: pointer;
+    /*background-color: #ccc;*/
+}
+.navbar-nav > li > a {
+    margin-left: 20px;
+}
+.caret {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px dashed;
+    display: inline-block;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    width: 0;
+}
+
+.dropdown .dropdown-menu {
+    position: relative;
+    margin-top: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 160px;
+    display: none;
+    z-index: 999;
+}
+.open > .dropdown-menu {
+    display: block;
+}
+.dropdown-menu > li {
+    list-style: none;
+    vertical-align: middle;
+    min-width: 160px;
+    background-color: #fff;
+}
+.dropdown-menu > li > a {
+    min-width: 150px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.dropdown-menu li:hover {
+    background-color: #0099ff;
+}
+.dropdown-menu li a:hover {
+    color: white;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #444;
+    outline: 0;    /* Removing The Dotted Outline */
+    /* Fade Effect on Link Hover? */
+}
+a:hover {
+    color: #003bb3;
+    -o-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: color 0.3s ease-in-out;
+}
+ul.list-group > li.list-group-heading {
+    width: 248px; height: 20px;
+    padding-bottom: 50px;
+    margin-left: 20px;
+    font-size: larger;
+    color: #656565;
+    /*background-color: #5bb75b;*/
+}
+li.list-group-item {
+    height: 52px;
+    /*border-bottom: 1px solid #e74c3c;*/
+    vertical-align: middle;
+    display: block;
+}
+li.list-group-item > a {
+    color: #616161;
+    padding: 20px 192px 20px 40px;
+    height: 40px;
+    background-color: #fff;
+}
+.sidenav .list-group .list-group-item.active > a {
+    color: #188eee;
+    border-left: 2px solid #188eee;
+    padding: 20px 190px 20px 40px;
+    background-color: snow;
+}
+li.list-group-item > a:hover {
+    background-color: #f5f8fa;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 8px;
+}
+
+.panel > .panel-heading {
+    position: relative;
+    padding: 15px 0;
+    background: #fff;
+    /*background-color: #e9fff2;*/
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 16px;
+    color: #656565;
+}
+
+.panel-default {
+    padding: 0px 15px;
+    border-color: #e4ecf3;
+}
+
+.panel .panel-body {
+    position: relative;
+    padding: 10px;
+}
+
+input {  outline: medium;  }
+/* chrome表单自动填充去掉input黄色背景 */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-text-fill-color: #333;
+}
+
+input[type="file"] {
+    display: block;
+}
+
+.clearfix {
+    clear: both;
+    overflow: auto;
+    zoom: 1;
+}
+
+.avatar-thumb {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+}
+
+ul.user-nav > li.hidden-xs > a > img.avatar-thumb {
+    margin-top: -12px;
+}
+
+ol {display: block;}
+li {list-style-type: none;}
+
+textarea.form-control {
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 4px;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+.btn-default:hover {
+    color: #616161;
+    background-color: #e1e1e1;
+}
+
+.hide {
+    display: none;
+}
+.pull-left {
+    float: left !important;
+}
+.pull-right {
+    float: right !important;
+}
+
+form.navbar-form > div.form-group {
+    border: 1px solid #ccc;
+}
+
+/* footer common style sheet */
+footer {
+    clear: both;
+    width: 100%;
+    color: white;
+    background-color: #002050;
+}
+footer p {
+    padding-top: 6px;
+    padding-bottom: 10px;
+}
+footer a {
+    color: #0099ff;
+    font-size: 14px;
+}
+footer img {
+    width:88px;
+    height:31px;
+    margin-top: 8px;
+}
+footer div.link {
+}
+footer div.link > table {
+    margin: 8px auto;
+    text-align: center;
+}
+footer div.link > table label {
+    color: #1f6377;
+}
