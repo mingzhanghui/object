@@ -24,7 +24,6 @@ function startClock() {
   xmlHttp.onreadystatechange = function() {
     if (xmlHttp.status == 200) {
       var str = xmlHttp.responseText;
-      console.log(str);
       document.getElementById("js_showtime").innerHTML = str;
       setTimeout("startClock()", 999);
     }
